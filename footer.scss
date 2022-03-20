@@ -1,0 +1,114 @@
+
+.footer {
+   background-color: #0b265a;
+   &__container {
+      min-height: 444px;
+      display: flex;
+      align-items: center;
+      @media (max-width: $md2) {
+         min-height: 344px;
+      }
+      @media (max-width: 600px) {
+         padding: 50px 0 50px 0;
+         flex-direction: column-reverse;
+      }
+      
+   }
+
+   
+
+   &__columns {
+      gap: 130px;
+      display: flex;
+      @media (max-width: 600px) {
+         
+      }
+      @media (max-width: $md1) {
+			gap: 50px;
+		}
+      @media (max-width: 600px) {
+         padding-bottom: 40px;
+      }
+      @media (max-width: 600px) {
+         flex-direction: column;
+      }
+   }
+}
+
+.content-footer {
+   flex: 0 0 585px;
+   @media (max-width: $md1) {
+      flex: 0 0 500px;
+   }
+   @media (max-width: $md2) {
+      flex: 0 0 300px;
+   }
+   @media (max-width: $md3) {
+      flex: 0 0 200px;
+   }
+   justify-content: start;
+
+   &__logo {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+   }
+
+   &__text {
+      font-family: "Inter";
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #d9dbde;
+      padding-bottom: 45px;
+   }
+
+   &__icons {
+
+      display: flex;
+      align-items: center;
+   }
+}
+.twitter {
+   padding-right: 30px;
+}
+
+.column-footer {
+   &__title {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      padding-bottom: 27px;
+      @media (max-width: 600px) {
+         padding-bottom: 18px;
+      }
+   }
+
+   &__nav {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 27px;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #d9dbde;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      @media (max-width: 600px) {
+         margin-bottom: 18px;
+      }
+   }
+}
+
+//====================================================================================================
+
+//====================================================================================================
